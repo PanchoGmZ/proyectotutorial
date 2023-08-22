@@ -1,31 +1,140 @@
-p{
-  color:#400D07;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-h1{
-    color:#80190E;
+*{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
 }
-h2{
-    color:#BF2615;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 39px;
+:root{
+    --text--color:#400D07;
+    --textsubt--color:#BF2615;
 }
-h3{
-    color:#861b0f;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 28px;
+
+.logopag{
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:bisque;
+  float: right;
 }
-header{
-    background-color: #bd635b;
-}
-section{
-    background-color: #CC4539;
-}
-ul{
-    background-color: bisque;
-}
-html{
-    background-color: #400D07;
+header {
+    background: linear-gradient(rgb(0, 0, 0), rgba(56, 55, 55, 0.13));
+    width: 150%;
+    position:fixed;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+  }
+  header:hover{
+    background: #000007;
+  }
+  header:after{
+    content: "";
+    background: #000007;
+    left: 0;
+    right: 0;
+    top: -100%;
+    bottom: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  header:hover::after{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+  
+  }
+  nav ul li a {
+    display:block;
+    padding: 10px;
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    color:white;
+    text-decoration: underline;
+    background: #BF2615;
+    border-radius: 14px;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  nav ul li:hover::after{
+    left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   -webkit-transition: all 0.35s;
+   transition: all 0.35s;
+  }
+ 
+  .contenedorimg{
+    width: 100%;
+    position:static;
+    display:inline-block;
+    text-align: left;
+  }
+
+  .ov-btn-slide-left{
+    font-size: 45px;
+    color:rgb(243, 236, 202);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 90%;
+    left: 2%;
+  }
+  .ov-btn-slide-left {
+    background: none; 
+    color: #f3f3e3; 
+    padding: 16px 20px;
+    border-radius: 14px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-slide-left:hover {
+    color: #fff; 
+  }
+  .ov-btn-slide-left::after {
+    content: "";
+    background: #000007; 
+    border-radius: 14px;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.7s ease;
+  }
+  .ov-btn-slide-left:hover::after {
+    transition: all 0.7s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
+
+footer{
+    background-color: black;
+    
 }

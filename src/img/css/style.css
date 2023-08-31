@@ -296,3 +296,7 @@ footer{
   10%{opacity: 1;
       filter: brightness(2)blur(10px);}
 }
+.contactanos{
+  background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,0.5494572829131652) 0%, rgba(253,29,29,0.49343487394957986) 50%, rgba(252,176,69,1) 100%);
+}
